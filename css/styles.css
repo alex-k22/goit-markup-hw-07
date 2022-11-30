@@ -216,10 +216,10 @@ img {
 	background-color: var(--active-button);
 }
 /* Features */
-.features {
+.features__list {
 	display: flex;
 }
-.feature-logo {
+.features__logo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -229,38 +229,46 @@ img {
 	margin-bottom: 30px;
 	border-radius: 4px;
 }
-.features .item {
+.features__card {
 	width: 270px;
 	margin-right: 30px;
 }
-.features .item:last-child {
+.features__card:last-child {
 	margin-right: 0;
 }
-.feature-subheader {
+.features__subheader {
 	font-size: 14px;
 	line-height: calc(16 / 14);
 	text-transform: uppercase;
 	color: var(--header-color);
 	margin-bottom: 10px;
 }
-.features .text {
+.features__text {
 	line-height: calc(24 / 14);
 }
 /* Work */
-.work {
+.works {
 	padding-top: 0;
 }
-.work-item {
+.works__header,
+.team__header {
+	font-size: 36px;
+	line-height: calc(43 / 36);
+	text-align: center;
+	color: var(--header-color);
+	margin-bottom: 50px;
+}
+.works__item {
 	position: relative;
 	margin-right: 30px;
 }
-.work-item:last-child {
+.works__item:last-child {
 	margin-right: 0;
 }
-.works {
+.works__list {
 	display: flex;
 }
-.overlay {
+.works__overlay {
 	position: absolute;
 	width: 100%;
 	bottom: 0;
@@ -269,39 +277,32 @@ img {
 	background-color: rgba(47, 48, 58, 0.8);
 	/* backdrop-filter: blur(2px); */
 }
-.overlay-text {
+.works__text {
 	text-align: center;
 	font-weight: 700;
 	line-height: calc(16 / 14);
 	text-transform: uppercase;
 	color: var(--main-background);
 }
-.work-header,
-.team-header {
-	font-size: 36px;
-	line-height: calc(43 / 36);
-	text-align: center;
-	color: var(--header-color);
-	margin-bottom: 50px;
-}
+
 /* Team */
 .team {
 	background-color: var(--team-background);
 }
-.workers {
+.team__list {
 	display: flex;
 }
-.workers .item {
+.team__card {
 	width: 270px;
 	margin-right: 30px;
 	background-color: var(--main-background);
 	border-radius: 0px 0px 4px 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.workers .item:last-child {
+.team__card:last-child {
 	margin-right: 0;
 }
-.team .member {
+.team__member {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: calc(19 / 16);
@@ -309,20 +310,20 @@ img {
 	color: var(--header-color);
 	margin-bottom: 10px;
 }
-.job {
+.team__job {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: calc(19 / 16);
 	text-align: center;
 	margin-bottom: 16px;
 }
-.team-social {
+.social {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
 }
-.team-social-link {
+.social__link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -333,15 +334,15 @@ img {
 	border-radius: 50%;
 	transition: color var(--animation-type), background-color var(--animation-type);
 }
-.team .social-icon {
+.social__icon {
 	fill: currentColor;
 }
-.team-social-link:hover,
-.team-social-link:focus {
+.social__link:hover,
+.social__link:focus {
 	background-color: var(--accent-color);
 	color: var(--main-background);
 }
-.team .about {
+.team__about {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -751,6 +752,10 @@ img {
 	fill: var(--accent-color);
 }
 .agree-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
