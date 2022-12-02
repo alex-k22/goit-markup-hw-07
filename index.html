@@ -12,7 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 
 	<body>
@@ -23,25 +23,25 @@
 					<!-- prettier-ignore -->
 					<a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio
 				</a>
-					<ul class="site-nav list">
-						<li class="item">
-							<a href="./index.html" class="link current">Студія</a>
+					<ul class="main-nav__list list">
+						<li class="main-nav__item">
+							<a href="./index.html" class="main-nav__link--current link">Студія</a>
 						</li>
-						<li class="item">
-							<a href="./portfolio.html" class="link">Портфоліо</a>
+						<li class="main-nav__item">
+							<a href="./portfolio.html" class="main-nav__link link">Портфоліо</a>
 						</li>
-						<li class="item"><a href="" class="link">Контакти</a></li>
+						<li class="main-nav__item"><a href="" class="main-nav__link link">Контакти</a></li>
 					</ul>
 				</nav>
-				<div class="nav-contacts">
-					<a href="mailto:info@devstudio.com" class="contact link">
-						<svg width="16" height="12" class="contact-icon">
+				<div class="header__contacts">
+					<a href="mailto:info@devstudio.com" class="header__contact link">
+						<svg width="16" height="12" class="header__icon">
 							<use href="./images/icons.svg#envelope"></use>
 						</svg>
 						info@devstudio.com
 					</a>
-					<a href="tel:380961111111" class="contact link">
-						<svg width="10" height="16" class="contact-icon">
+					<a href="tel:380961111111" class="header__contact link">
+						<svg width="10" height="16" class="header__icon">
 							<use href="./images/icons.svg#smartphone"></use>
 						</svg>
 						+38 096 111 11 11
@@ -51,18 +51,18 @@
 		</header>
 		<main>
 			<!-- Section Hero -->
-			<section class="hero section">
+			<section class="hero">
 				<div class="container">
 					<h1 class="header">
 						Ефективні рішення для
 						<br />
 						вашого бізнесу
 					</h1>
-					<button type="button" class="button" data-modal-open>Замовити послугу</button>
+					<button type="button" class="button hero__btn" data-modal-open>Замовити послугу</button>
 				</div>
 			</section>
 			<!-- Section features -->
-			<section class="features section">
+			<section class="features">
 				<div class="container">
 					<h2 class="visually-hidden">Особливості</h2>
 					<ul class="list features__list">
@@ -109,9 +109,9 @@
 			</section>
 
 			<!-- Section Works -->
-			<section class="section works">
+			<section class="works">
 				<div class="container">
-					<h2 class="works__header">Чим ми займаємося</h2>
+					<h2 class="section__header">Чим ми займаємося</h2>
 					<ul class="list works__list">
 						<li class="works__item">
 							<img src="./images/img-1.jpg" alt="Планування" width="370" />
@@ -135,9 +135,9 @@
 				</div>
 			</section>
 			<!-- Section Team -->
-			<section class="section team">
+			<section class="team">
 				<div class="container">
-					<h2 class="team__header">Наша команда</h2>
+					<h2 class="section__header">Наша команда</h2>
 					<ul class="list team__list">
 						<li class="team__card">
 							<img src="./images/team-1.jpg" alt="Ігор Дем'яненко" width="270" />
@@ -387,9 +387,9 @@
 				</div>
 			</section>
 			<!-- Section Clients -->
-			<section class="section our-clients">
+			<section class="clients">
 				<div class="container">
-					<h2 class="works__header">Постійні клієнти</h2>
+					<h2 class="section__header">Постійні клієнти</h2>
 					<ul class="list clients-list">
 						<li class="client">
 							<a class="link client-link" href="">
@@ -439,74 +439,74 @@
 		</main>
 		<!-- Section footer -->
 		<footer class="site-footer">
-			<div class="container footer-container">
+			<div class="container site-footer__container">
 				<div class="container-adress">
 					<!-- prettier-ignore -->
 					<a href="./index.html" class="logo site-footer-logo"><span class="logo-web">Web</span>Studio</a>
 					<address class="address">
 						<a
 							href="https://goo.gl/maps/S7qXXixfhNyc4wEfA"
-							class="link address-link"
+							class="site-footer__link site-footer__address"
 							target="_blank"
 							rel="noopener noreferrer nofollow"
 						>
 							м. Київ, пр-т Лесі Українки, 26
 						</a>
-						<a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a>
-						<a href="tel:380961111111" class="contact-link link">+38 096 111 11 11</a>
+						<a href="mailto:info@devstudio.com" class="site-footer__contact link">info@devstudio.com</a>
+						<a href="tel:380961111111" class="site-footer__contact link">+38 096 111 11 11</a>
 					</address>
 				</div>
-				<div class="container-socials">
-					<h2 class="join-us">Приєднуйтесь</h2>
-					<ul class="list footer-socials">
+				<div class="socials">
+					<h2 class="socials__title">Приєднуйтесь</h2>
+					<ul class="list socials__list">
 						<li>
 							<a
-								class="social-link link"
+								class="socials__link link"
 								href="https://www.instagram.com/"
 								aria-label="Іконка Instagram"
 								target="_blank"
 								rel="noopener noreferrer nofollow"
 							>
-								<svg class="social__icon" width="20" height="20">
+								<svg class="socials__icon" width="20" height="20">
 									<use href="./images/icons.svg#instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a
-								class="social-link link"
+								class="socials__link link"
 								href="https://twitter.com/"
 								aria-label="Іконка Twitter"
 								target="_blank"
 								rel="noopener noreferrer nofollow"
 							>
-								<svg class="social__icon" width="20" height="20">
+								<svg class="socials__icon" width="20" height="20">
 									<use href="./images/icons.svg#twitter"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a
-								class="social-link link"
+								class="socials__link link"
 								href="https://www.facebook.com/"
 								aria-label="Іконка Facebook"
 								target="_blank"
 								rel="noopener noreferrer nofollow"
 							>
-								<svg class="social__icon" width="20" height="20">
+								<svg class="socials__icon" width="20" height="20">
 									<use href="./images/icons.svg#facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a
-								class="social-link link"
+								class="socials__link link"
 								href="https://ua.linkedin.com/"
 								aria-label="Іконка Linkedin"
 								target="_blank"
 								rel="noopener noreferrer nofollow"
 							>
-								<svg class="social__icon" width="20" height="20">
+								<svg class="socials__icon" width="20" height="20">
 									<use href="./images/icons.svg#linkedin"></use>
 								</svg>
 							</a>
@@ -518,7 +518,7 @@
 					<form name="form_subscribe" class="form-subscribe">
 						<label class="subscribe-label" for="email"></label>
 						<input type="email" class="subscribe-field" name="email" id="email" placeholder="E-mail" required />
-						<button type="submit" class="subscribe-btn">Підписатися</button>
+						<button type="submit" class="button subscribe-btn">Підписатися</button>
 						<svg class="send-icon" width="24" height="24">
 							<use href="./images/icons.svg#send"></use>
 						</svg>
@@ -579,7 +579,7 @@
 							<a href="" class="agree-link">Умови договору</a>
 						</label>
 					</div>
-					<button class="modal-form-btn" type="submit">Відправити</button>
+					<button class="button modal-form-btn" type="submit">Відправити</button>
 				</form>
 			</div>
 		</div>
